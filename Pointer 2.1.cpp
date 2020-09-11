@@ -1,8 +1,15 @@
 #include<stdio.h>
 int main() {
     int x = 10;
-    printf("Value of x is %d\n",x); //10
-    printf("Address of x is %p\n",&x);
+    int *p;
+
+    p = &x;
+
+    printf("*p = %d\n",*p); //10
+    printf("Value of p is %p\n",p);
+
+    // %d prints values
+    // %p prints address
 
     return 0;
 
